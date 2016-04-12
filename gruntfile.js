@@ -52,8 +52,7 @@ module.exports = function(grunt) {
             js: {
                 files: {
                     '<%= jsDir %>/main.js': [
-                        '<%= jsLibDir %>/jquery.min.js',
-                        '<%= jsLibDir %>/accrue/jquery.accrue.js',
+                        '<%= jsLibDir %>/creep/jquery.creep.min.js',
                         '<%= jsSrcDir %>/*.js',
                     ],
                     '<%= jsDir %>/head.js': [
