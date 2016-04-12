@@ -1,0 +1,144 @@
+
+
+// color variables
+$grey: #636464;
+$grey-light: #DEE0E0;
+$blue: #255AA8;
+$teal: #00B1B0;
+$orange: #F7941E;
+$purple: #412875;
+
+
+@import "reset";
+
+@import "fonts";
+
+@import "mixins";
+
+@import "base";
+
+@import "grid";
+
+
+// background-container
+.container {
+	background: $grey-light url(../img/bg-body.jpg) top center;
+	padding-bottom: 40px;
+
+	@include respond-to( 1220px ) {
+		padding-bottom: 20px;
+	}
+}
+
+
+
+// wrap div
+.wrap {
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+	@include clearfix;
+}
+
+
+
+// header styles
+.header {
+	.wrap {
+		position: relative;
+
+	}
+}
+
+
+
+// section styles
+section {	
+	.bg-symbols {
+		text-align: center;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 45px;
+		padding: 2px 0;
+	}
+	
+	hr {
+		height: 1px;
+		background: transparent;
+		border-bottom: 1px solid white;
+		padding: 0;
+		margin: 25px 0;
+
+		@include respond-to( 768px ) {
+			margin: 25px 40px;
+		}
+	}
+
+	h4 {
+		font-size: 25px;
+		line-height: 35px;
+		padding: 2px 0;
+	}
+
+	.arrow-bar {
+		text-align: center;
+
+		@include respond-to( 1024px ) {
+			text-align: left;
+		}
+	}
+
+	.content {
+		padding: 20px;
+
+		@include respond-to( 768px ) {
+			padding: 30px 40px;
+		}
+	}
+}
+
+
+
+// footer styles
+footer {
+	.bg-symbols {
+		background-position: top left;
+	}
+}
+
+
+
+// padding div that'll resize for larger screens.
+.pad {
+	padding: 30px 20px;
+}
+
+
+
+// colors
+.bg-blue { background: $blue; }
+.bg-teal { background: $teal; }
+.bg-grey { background: $grey-light; }
+.bg-purple { background: $purple; }
+.bg-orange { background: $orange; }
+.bg-white { background: white; }
+.bg-symbols {
+	padding: 30px;
+	background: url(../img/bg-symbols.png) center center no-repeat;
+
+	@include respond-to( 1024px ) {
+		background-position: left center;
+		padding-left: 450px;
+	}
+}
+
+.text-blue { color: $blue; }
+.text-teal { color: $teal; }
+.text-grey { color: $grey-light; }
+.text-purple { color: $purple; }
+.text-orange { color: $orange; }
+.text-white { color: white; }
+
+
