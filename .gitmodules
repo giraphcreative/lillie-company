@@ -6,4 +6,4 @@
 	url = https://github.com/aFarkas/html5shiv.git
 [submodule "js/lib/creep"]
 	path = js/lib/creep
-	url = git@github.com:jpederson/Creep.js.git
+	url = https://github.com/jpederson/Creep.js.git
