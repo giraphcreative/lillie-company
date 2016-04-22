@@ -193,12 +193,13 @@ section {
 
 			.third-content {
 				background: white;
-				padding: 10px 20px;
+				padding: 10px 15px;
 				margin-top: 10px;
 				clear: left;
 
 				@include respond-to( 768px ) {
 					padding: 15px 30px;
+					min-height: 280px;
 				}
 			}
 		}
