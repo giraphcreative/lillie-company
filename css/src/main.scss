@@ -207,9 +207,9 @@ section {
 
 	blockquote {
 		padding: 0 0 30px 50px;
-		font-size: 1.4em;
-		line-height: 1.3em;
-		@include font-bold;
+		font-size: 1.5em;
+		line-height: 1.4em;
+		color: lighten( $grey, 5% );
 
 		&.teal { background: url(../img/quote-small-teal.png) top left no-repeat; }
 		&.purple { background: url(../img/quote-small-purple.png) top left no-repeat; }
@@ -218,8 +218,6 @@ section {
 
 		@include respond-to( 768px ) {
 			padding: 0 0 30px 77px;
-			font-size: 1.8em;
-			line-height: 1.3em;
 
 			&.teal { background: url(../img/quote-large-teal.png) top left no-repeat; }
 			&.purple { background: url(../img/quote-large-purple.png) top left no-repeat; }
